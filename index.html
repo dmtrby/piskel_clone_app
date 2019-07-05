@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="../src/views/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Piskel Clone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"></head>
+
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <h1>PISKEL CLONE</h1>
+      </div>
+      <div class="header-menu">
+        <ul class="page-tools">
+          <li class="tool reset-tool">
+            <i class="fas fa-broom"></i>
+            <span class="header-tool-span">Reset</span>
+          </li>
+          <li class="tool controls-tool">
+            <i class="fas fa-keyboard"></i>
+            <span class="header-tool-span">Controls</span>
+          </li>
+          <li class="tool settings-tool">
+            <i class="fas fa-cogs"></i>
+            <span class="header-tool-span">Settings</span>
+          </li>
+          <li class="tool export-tool">
+            <i class="fas fa-download"></i>
+            <span class="header-tool-span">Export</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <section class="instruments">
+        <ul class="tools-inspector">
+          <li class="instrument pen-instrument">
+            <i class="fas fa-pencil-alt"></i>
+          </li>
+          <li class="instrument stroke-instrument">
+            <i class="fas fa-pencil-ruler"></i>
+          </li>
+          <li class="instrument circle-instrument">
+            <i class="far fa-circle"></i>
+          </li>
+          <li class="instrument square-instrument">
+            <i class="far fa-square"></i>
+          </li>
+          <li class="instrument bucket-instrument">
+            <i class="fas fa-fill"></i>
+          </li>
+          <li class="instrument fillpixels-instrument">
+            <i class="fas fa-fill-drip"></i>
+          </li>
+          <li class="instrument eraser-instrument">
+            <i class="fas fa-eraser"></i>
+          </li>
+          <li class="instrument eyedropper-instrument">
+            <i class="fas fa-eye-dropper"></i>
+          </li>
+          <li class="instrument lighten-instrument">
+            <i class="fas fa-sun"></i>
+          </li>
+          <li class="instrument hand-instrument">
+            <i class="far fa-hand-paper"></i>
+          </li>
+          <li class="instrument chess-instrument">
+            <i class="fas fa-chess-board"></i>
+          </li>
+          <li class="instrument star-instrument">
+            <i class="far fa-star"></i>
+          </li>
+        </ul>
+        <div class="colors-inspector">
+          <input type="color" class="primary-color" value="#000">
+          <input type="color" class="secondary-color" value="#fff">
+          <div class="swap-colors">
+            <i class="fas fa-retweet"></i>
+          </div>
+        </div>
+      </section>
+      <section class="frames">
+        <div class="frame-elements-container">
+        </div>
+        <button class="btn new-frame-button" type="button"><i class="fas fa-plus"></i><span>New frame</span></button>
+      </section>
+      <section class="workarea">
+        <div class="background-canvas"></div>
+      </section>
+      <section class="settings">
+        <div class="toolbox toolbox-preview">
+          <div class="preview">
+            <div class="full-screen-button"> <i class="fas fa-compress"></i></div>
+            <div class="background-canvas"></div>
+            <div class="preview-area">
+            </div>
+          </div>
+          <div class="slider-controller">
+            <input type="range" min="1" max="24" value="6" class="slider">
+            <div class="slider-out">
+              <span class="slider-out-output"></span>
+            </div>
+          </div>
+        </div>
+        <div class="toolbox toolbox-layers">
+          <div class="toolbox-head">
+            <h3>Layers</h3>
+          </div>
+          <div class="toolbox-buttons">
+            <button class="toolbox-button add"><i class="fas fa-plus"></i></button>
+            <button class="toolbox-button up"><i class="fas fa-angle-up"></i></button>
+            <button class="toolbox-button down"><i class="fas fa-angle-down"></i></button>
+            <button class="toolbox-button delete"><i class="fas fa-trash"></i></button>
+            <button class="toolbox-button edit"><i class="fas fa-edit"></i></button>
+          </div>
+          <ul class="layers-container">
+          </ul>
+        </div>
+        <div class="toolbox-info">
+          <span class="current-pixel">3:35</span>
+          <span class="current-sizes"></span>
+        </div>
+      </section>
+    </div>
+  </main>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
